@@ -1,0 +1,14 @@
+body {
+    font-family: 'roboto', 'Raleway';
+    color: var(--titlle-color);
+}
+
+.caption {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--titlle-color);
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+}

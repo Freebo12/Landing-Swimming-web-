@@ -1,0 +1,24 @@
+.team-section {
+    background-color: var(--btn-background);
+}
+
+.team {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .team__item {
+        box-shadow: var(--photo-shadow);
+        border-radius: 0px 0px 4px 4px;
+    }
+}
