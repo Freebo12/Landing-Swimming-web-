@@ -744,9 +744,9 @@ body {
 .menu-toggle {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 5px;
   border: none;
-  background-color: var(--active-color);
+  background-color: transparent;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -1240,9 +1240,10 @@ body {
   }
 }
 .team .team__item {
-  -webkit-box-shadow: var(--photo-shadow);
-          box-shadow: var(--photo-shadow);
   border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .clients {
@@ -1681,6 +1682,31 @@ body {
   background-color: var(--img-color);
 }
 
+.section-btn {
+  margin: 0 auto;
+  display: block;
+  background: hsl(0, 0%, 85%);
+  border-radius: 12px;
+  border: 1px steelblue;
+  border-color: rgb(11, 54, 40);
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  width: 300px;
+}
+.section-btn:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.section-btn-custom {
+  margin: 0 auto;
+  display: block;
+  width: auto;
+}
+
 .section-subject {
   font-style: normal;
   font-weight: 700;
@@ -1691,6 +1717,18 @@ body {
   font-family: "Verdana";
   margin-bottom: 4px;
   text-align: center;
+  display: block;
+  padding: 15px 1px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: white;
+  color: black;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.section-subject:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .section-desc {

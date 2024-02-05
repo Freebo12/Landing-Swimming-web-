@@ -106,9 +106,9 @@
 .menu-toggle {
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 5px;
     border: none;
-    background-color: var(--active-color);
+    background-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
 
