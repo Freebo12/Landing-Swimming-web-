@@ -1,6 +1,7 @@
 const modalController = ({ modal, btnOpen, btnClose }) => {
   const btnElement = document.querySelectorAll(btnOpen);
   const modalElement = document.querySelector(modal);
+  const bodyElement = document.querySelector('body');
 
   modalElement.style.cssText = `
 display: flex;
@@ -14,6 +15,7 @@ transition: opacity 300ms ease-in-out;
 
     if (target === modalElement || target.closest(btnClose)) {
       modalElement.style.opacity = 0;
+      bodyElement.style.overflow = 'auto';
 
       setTimeout(() => {
         modalElement.style.visibility = 'hidden';
@@ -24,6 +26,7 @@ transition: opacity 300ms ease-in-out;
   const modalOpenDecs = () => {
     modalElement.style.visibility = 'visible';
     modalElement.style.opacity = 1;
+    bodyElement.style.overflow = 'hidden';
   };
 
   btnElement.forEach(btn => {
