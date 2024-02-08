@@ -1,4 +1,5 @@
 .backdrop {
+
     position: fixed;
     top: 0;
     left: 0;
@@ -13,12 +14,14 @@
 }
 
 .backdrop.is-hidden {
+
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 
 .modal {
+    z-index: 2000;
     position: fixed;
     height: auto;
     width: 450px;
@@ -45,6 +48,7 @@
 }
 
 .modal__btn {
+
     position: absolute;
     top: 8px;
     right: 8px;
@@ -82,4 +86,6 @@
         line-height: calc(23 / 20);
 
     }
+
+
 }

@@ -40,14 +40,93 @@
           </svg>
         </button>
       </div>
+      <!--!modal set -->
+      <!-- modal desc -->
+      <div class="modal-desc modal-desc-global">
+        <div class="modal-main">
+          <button class="btn-close-desc">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+
+          <div class="modal-container">
+            <ul class="list-desc">
+              <li><h4>Заняття від 3 місяців до 2 років</h4></li>
+              <li><h4>Заняття від 2 років до 14 років</h4></li>
+              <li><h4>Заняття для дорослих постановка стилів плавання</h4></li>
+              <li>
+                <details>
+                  <summary>Плавання</summary>
+                  <p>
+                    - це не тільки чудова фізична активність, але перш за все навичка, яка може
+                    допомогти вам та вашій дитині в житті. Вона отримає більше, навчившись плавати
+                    впевненість у собі, вміння справлятися зі складними ситуаціями та ряд нових
+                    спортивних пригод , друзів та атмосфери.
+                  </p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Заняття</summary>
+                  <p>
+                    проводяться з інструктором у воді. Ми маємо групові та індивідуальні заняття .
+                    Групові заняття в групі до 3 -ох учнів разом з батьками Індивідуальні заняття з
+                    самим інструктором у воді До зустрічі на басейні 💦🫧
+                  </p>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- modal schedule -->
+      <div class="modal-schedule modal-desc-global">
+        <div class="modal-main">
+          <button class="btn-close-desc">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">modal window</h2>
+          <div class="modal-container"></div>
+          <p>Графік</p>
+        </div>
+      </div>
+      <!-- modal equippe -->
+      <div class="modal-quippe modal-desc-global">
+        <div class="modal-main">
+          <button class="btn-close-desc">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">modal window</h2>
+          <div class="modal-container"></div>
+          <p>що брати з собою</p>
+        </div>
+      </div>
+      <!-- modal price -->
+      <div class="modal-price modal-desc-global">
+        <div class="modal-main">
+          <button class="btn-close-desc">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">modal window</h2>
+          <div class="modal-container"></div>
+          <p>price</p>
+        </div>
+      </div>
     </header>
     <main>
       <!--!imgs-->
 
       <ul class="benefits">
         <li class="benefits__item">
-          <a class="benefits__link" href=""
-            ><div class="portfolio-thumb">
+          <div class="benefits__link" href="">
+            <div class="portfolio-thumb">
               <img
                 class="section-img"
                 src="./images/portfolio/main/section-images/desc.jpg"
@@ -56,14 +135,17 @@
               />
             </div>
             <div class="box-img">
-              <button class="section-btn"><h2 class="section-subject">Опис занять</h2></button>
-              <p class="section-desc"></p></div
-          ></a>
+              <button class="section-btn btn-desc">
+                <h2 class="section-subject">Опис занять</h2>
+              </button>
+              <p class="section-desc"></p>
+            </div>
+          </div>
         </li>
 
         <li class="benefits__item">
-          <a class="benefits__link" href=""
-            ><div class="portfolio-thumb">
+          <div class="benefits__link" href="">
+            <div class="portfolio-thumb">
               <img
                 class="section-img"
                 src="./images/portfolio/main/section-images/sh.jpg"
@@ -72,15 +154,16 @@
               />
             </div>
             <div class="box-img">
-              <button class="section-btn">
+              <button class="section-btn btn-sc">
                 <h2 class="section-subject">Графік занять</h2>
               </button>
-              <p class="section-desc"></p></div
-          ></a>
+              <p class="section-desc"></p>
+            </div>
+          </div>
         </li>
         <li class="benefits__item">
-          <a class="benefits__link" href=""
-            ><div class="portfolio-thumb">
+          <div class="benefits__link" href="">
+            <div class="portfolio-thumb">
               <img
                 class="section-img"
                 src="./images/portfolio/main/section-images/ax.jpg"
@@ -89,15 +172,16 @@
               />
             </div>
             <div class="box-img">
-              <button class="section-btn section-btn-custom">
+              <button class="section-btn section-btn-custom btn-eq">
                 <h2 class="section-subject">Що потрібно брати</h2>
               </button>
-              <p class="section-desc"></p></div
-          ></a>
+              <p class="section-desc"></p>
+            </div>
+          </div>
         </li>
         <li class="benefits__item">
-          <a class="benefits__link" href=""
-            ><div class="portfolio-thumb">
+          <div class="benefits__link" href="">
+            <div class="portfolio-thumb">
               <img
                 class="section-img"
                 src="./images/portfolio/main/section-images/price.jpg"
@@ -106,9 +190,9 @@
               />
             </div>
             <div class="box-img">
-              <button class="section-btn"><h2 class="section-subject">Ціна</h2></button>
-            </div></a
-          >
+              <button class="section-btn btn-price"><h2 class="section-subject">Ціна</h2></button>
+            </div>
+          </div>
         </li>
       </ul>
     </main>
@@ -252,5 +336,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./Js/mobile-menu.js"></script>
+    <script defer src="/Js/modal-desc.js"></script>
   </body>
 </html>
