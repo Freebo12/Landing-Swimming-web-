@@ -1,2 +1,1 @@
-WebStudio 
-"Effective solutions for your business"
+Landing Page for Swimming instructor
