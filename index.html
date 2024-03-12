@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,6 +43,12 @@
         <a class="header__logo" href="./index.html"
           >Go<span class="header__logo--half">Swimm</span>
         </a>
+
+        <!--!dark theme-->
+        <!-- <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label> -->
         <!--!mobile-menu-->
         <button
           class="mobile__btn js-open-menu"
@@ -66,80 +72,65 @@
             </svg>
           </button>
 
-          <div class="modal-container">
-            <!-- <div class="carousel">
-              <div class="carousel-inner">
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-1"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                  checked="checked"
-                />
-                <div class="carousel-item">
-                  <h1 class="modal-desc-title">Немовлята</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio
-                    voluptas mollitia expedita eum consequuntur officiis veritatis corporis iusto
-                    quaerat, at culpa. Veniam enim necessitatibus fuga facere sit quisquam commodi?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam laboriosam
-                    dolore quia aut earum iure consequatur rem architecto vitae?
-                  </p>
-                </div>
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-2"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                />
-                <div class="carousel-item">
-                  <h1 class="modal-desc-title">Немовлята</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio
-                    voluptas mollitia expedita eum consequuntur officiis veritatis corporis iusto
-                    quaerat, at culpa. Veniam enim necessitatibus fuga facere sit quisquam commodi?
-                  </p>
-                </div>
-                <input
-                  class="carousel-open"
-                  type="radio"
-                  id="carousel-3"
-                  name="carousel"
-                  aria-hidden="true"
-                  hidden=""
-                />
-                <div class="carousel-item">
-                  <h1 class="modal-desc-title">Немовлята</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat distinctio
-                    voluptas mollitia expedita eum consequuntur officiis veritatis corporis iusto
-                    quaerat, at culpa. Veniam enim necessitatibus fuga facere sit quisquam commodi?
-                  </p>
-                </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
-                <ol class="carousel-indicators">
-                  <li>
-                    <label for="carousel-1" class="carousel-bullet">•</label>
-                  </li>
-                  <li>
-                    <label for="carousel-2" class="carousel-bullet">•</label>
-                  </li>
-                  <li>
-                    <label for="carousel-3" class="carousel-bullet">•</label>
-                  </li>
-                </ol>
-              </div>
-            </div> -->
+          <input
+            class="carousel-open-desc"
+            type="radio"
+            id="carousel-1-desc"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+            checked="checked"
+          />
+          <div class="carousel-item-desc">
+            <strong class="modal-desc-title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam officiis sequi
+              itaque rerum.
+            </strong>
           </div>
+          <input
+            class="carousel-open-desc"
+            type="radio"
+            id="carousel-2-desc"
+            name="carousel"
+            aria-hidden="true"
+            hidden=""
+          />
+          <div class="carousel-item-desc">
+            <strong
+              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, nisi?</strong
+            >
+          </div>
+
+          <label for="carousel-2-desc" class="carousel-control next control-1-desc"
+            ><div class="arrow-right">
+              <span></span>
+              <span></span></div
+          ></label>
+          <label for="carousel-1-desc" class="carousel-control prev control-2-desc"
+            ><div class="arrow-left">
+              <span></span>
+              <span></span></div
+          ></label>
+
+          <label for="carousel-2-desc" class="carousel-control prev control-1-desc"
+            ><div class="arrow-left">
+              <span></span>
+              <span></span></div
+          ></label>
+          <label for="carousel-1-desc" class="carousel-control next control-2-desc"
+            ><div class="arrow-right">
+              <span></span>
+              <span></span></div
+          ></label>
+
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1-desc" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2-desc" class="carousel-bullet">•</label>
+            </li>
+          </ol>
         </div>
       </div>
 
@@ -153,7 +144,7 @@
           </button>
           <ul class="list-desc">
             <li>
-              Понеділок <strong>11-15</strong>
+              Понеділок <strong>16:00-21:00</strong>
               <details>
                 <summary><strong>Басейн</strong></summary>
                 <a
@@ -166,7 +157,7 @@
               </details>
             </li>
             <li>
-              Вівторок <strong>11-15</strong>
+              Вівторок <strong>16:00-21:00</strong>
               <details>
                 <summary><strong>Басейн</strong></summary>
                 <a
@@ -178,7 +169,7 @@
               </details>
             </li>
             <li>
-              Середа <strong>11-15</strong>
+              Середа <strong>11:00-15:00</strong>
               <details>
                 <summary><strong>Басейн</strong></summary>
                 <a
@@ -190,7 +181,7 @@
               </details>
             </li>
             <li>
-              Четвер <strong>11-15</strong>
+              Четвер <strong>11:00-15:00</strong>
               <details>
                 <summary><strong>Басейн</strong></summary>
                 <a
@@ -202,7 +193,7 @@
               </details>
             </li>
             <li>
-              П'ятниця <strong>11-15</strong>
+              П'ятниця <strong>16:00-21:00</strong>
               <details>
                 <summary><strong>Басейн</strong></summary>
                 <a
@@ -312,7 +303,7 @@
             hidden=""
           />
           <div class="carousel-item">
-             <img src='./images/portfolio/Png for swimm/free-icon-diving-fins-12561841.png' alt=""></p>
+             <img src='./images/portfolio/Png for swimm/flip-flop.png' alt=""></p>
             <strong>5 Взуття для басейну: Бажано гумове, щоб не ковзати на мокрій підлозі.</strong>
           </div>
 
@@ -338,7 +329,7 @@
             hidden=""
           />
           <div class="carousel-item">
-          <p class="carousel-img"> <img class="carousel-img" src='./images/portfolio/Png for swimm/cream.png' alt=""></p>
+          <p class="carousel-img"> <img src='./images/portfolio/Png for swimm/cream.png' alt=""></p>
             <strong>
               7 Косметичні приналежності: Якщо вам потрібно використовувати креми або інші засоби.
               Не забудьте взяти ці речі з собою, і приємного плавання вам та вашому малюку!
@@ -477,16 +468,17 @@
             </thead>
             <tbody>
               <tr>
-                <td>Індивідуальний урок</td>
-                <td>120zl/год</td>
+                <td>Індивідуальне заняття</td>
+                <td>99zl/30хв 129zl/45хв 159zl/60хв</td>
+            
               </tr>
               <tr>
-                <td>Груповий урок (3-5 осіб)</td>
-                <td>80zl/год</td>
+                <td>Групове заняття (3-5 осіб)</td>
+                <td>65zl/30хв</td>
               </tr>
               <tr>
-                <td>Абонемент на місяць</td>
-                <td>500zl</td>
+                <td>Одноразовий внесок</td>
+                <td>40zl</td>
               </tr>
             </tbody>
           </table>
@@ -711,5 +703,6 @@
     ></script>
     <script defer src="./Js/mobile-menu.js"></script>
     <script defer src="./Js/modal-desc.js"></script>
+    <!-- <script defer src="./Js/toggle-theme.js"></script> -->
   </body>
 </html>

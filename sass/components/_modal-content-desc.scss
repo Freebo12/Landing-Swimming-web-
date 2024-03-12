@@ -15,12 +15,24 @@
     opacity: 100;
 }
 
+.carousel-open-desc:checked+.carousel-item-desc {
+    position: static;
+    opacity: 100;
+}
+
 .carousel-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
+
+// .carousel-item-desc {
+//     position: absolute;
+//     opacity: 0;
+//     -webkit-transition: opacity 0.6s ease-out;
+//     transition: opacity 0.6s ease-out;
+// }
 
 .carousel-item img {
     display: block;
@@ -60,6 +72,8 @@
 //     background: rgba(0, 0, 0, 0.8);
 //     color: #aaaaaa;
 // }
+#carousel-1-desc:checked~.control-1-desc,
+#carousel-2-desc:checked~.control-2-desc,
 
 #carousel-1:checked~.control-1,
 #carousel-2:checked~.control-2,
@@ -99,6 +113,9 @@
 .carousel-bullet:hover {
     color: #aaaaaa;
 }
+
+#carousel-1-desc:checked~.control-1-desc~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2-desc:checked~.control-2-desc~.carousel-indicators li:nth-child(2) .carousel-bullet,
 
 #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,

@@ -1776,7 +1776,7 @@ body {
   padding: 7px 20px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border-left: 10px solid red;
+  border-left: 10px solid #3455a1;
   -webkit-box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1), -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1), -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
   font-size: 20px;
@@ -1785,10 +1785,10 @@ body {
   transition: 0.3s all linear;
 }
 .list-desc li:nth-child(2) {
-  border-color: red;
+  border-color: #3455a1;
 }
 .list-desc li:nth-child(3) {
-  border-color: red;
+  border-color: #3455a1;
 }
 .list-desc li:nth-child(4) {
   border-color: #3455a1;
@@ -1810,6 +1810,11 @@ body {
 }
 
 .carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-open-desc:checked + .carousel-item-desc {
   position: static;
   opacity: 100;
 }
@@ -1853,6 +1858,8 @@ body {
   right: -2%;
 }
 
+#carousel-1-desc:checked ~ .control-1-desc,
+#carousel-2-desc:checked ~ .control-2-desc,
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
 #carousel-3:checked ~ .control-3,
@@ -1892,6 +1899,8 @@ body {
   color: #aaaaaa;
 }
 
+#carousel-1-desc:checked ~ .control-1-desc ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2-desc:checked ~ .control-2-desc ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
@@ -2029,4 +2038,101 @@ body {
 .carousel-img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.theme-light {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+}
+
+.theme-dark {
+  --color-primary: #17ed90;
+  --color-secondary: #2a2c2d;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+}
+
+body {
+  background: var(--color-secondary);
+}
+
+.container h1 {
+  color: var(--font-color);
+  font-family: sans-serif;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 0px 15px rgba(32, 32, 32, 0.2392156863);
+          box-shadow: 0 0px 15px rgba(32, 32, 32, 0.2392156863);
+  background: white url("https://i.ibb.co/FxzBYR9/night.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  transform: translateX(24px);
+  background: white url("https://i.ibb.co/7JfqXxB/sunny.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
