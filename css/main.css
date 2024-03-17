@@ -252,6 +252,10 @@ body {
   }
 }
 
+.about-coach {
+  text-align: center;
+}
+
 .register-form-field {
   margin-bottom: 10px;
 }
