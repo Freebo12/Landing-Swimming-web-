@@ -2,13 +2,13 @@
 
     background-color: var(--brand-color);
     padding-top: 60px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .block__tablet {
     display: flex;
     flex-direction: column;
-    margin-bottom: 60px;
+
 
 
 
@@ -30,7 +30,7 @@
 .container__footer--logo {
     display: block;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     @media screen and (min-width:1200px) {
         margin-right: 70px;
