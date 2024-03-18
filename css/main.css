@@ -466,6 +466,10 @@ body {
   margin-bottom: 16px;
 }
 
+.summary {
+  text-align: center;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
